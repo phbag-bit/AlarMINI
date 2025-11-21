@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap");
+html{
+    height: auto;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0; 
+  font-family: "Montserrat", sans-serif;
+  position: static;
+  padding-top: 0;
+  padding-bottom: 0px;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+main p:first-child {
+    margin-top: 50px;
+    flex-grow: 1;
+}
+
+h1 {
+  text-align: center;
+}
+
+header {
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: #004d40;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-content {
+  margin-bottom: 15px;
+}
+
+.header-logo {
+  width: 250px;
+  border: 1px;
+  height: auto;
+  max-width: 300px;
+  display: block;
+  margin: 0 auto 10px auto;
+  background-color: transparent;
+  border: 1px solid silver;
+  padding: 1px;
+}
+
+header h1 {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  font-size: 2.2em;
+  font-weight: bold;
+  color: silver;
+}
+
+header nav {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+header nav a {
+  font-size: 1.15em;
+  font-weight: normal;
+  color: white;
+  text-decoration: none;
+  padding: 5px 0;
+  transition: color 0.3s;
+  margin: 0;
+}
+
+header nav a:hover {
+  color: #1900ff;
+}
+
+
+
+/* CSS pagina sobre */
+.titulo-equipe {
+  text-align: center;
+  font-size: 2.5em;
+  color: #333;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+#integrantes-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 10px;
+  text-align: center;
+  min-width: 900px;
+}
+
+.integrante-card {
+  width: calc(25% - 15px);
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px 10px;
+  text-align: center;
+  transition: transform 0.3s;
+  box-sizing: border-box;
+}
+
+.integrante-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.integrante-card h2 {
+  color: #007bff;
+  font-size: 1.4em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.integrante-card img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.links {
+  margin-top: 15px;
+}
+
+.links a {
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 5px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.links a:hover {
+  background-color: #007bff;
+}
+
+footer {
+  
+  width: 100%;
+  background-color: #004d40;
+  color: #f4f4f9;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9em;
+
+  margin-top: auto;
+}
+
+footer p {
+  margin: 0;
+}
