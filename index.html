@@ -31,36 +31,207 @@
     </header>
 
     <main>
-      <p>
-        Nosso projeto foi pensado para ser o protótipo ideal de um robusto
-        sistema de segurança ao utilizar um 'sensor de movimento'. Este projeto
-        visa servir de inspiração para diversas pessoas leigas, as mesmas que
-        pensam que é difícil mexer com arduíno.
-      </p>
+      <section class="info-card">
+        <h2>Descrição do Projeto</h2>
+        <p>
+          O projeto AlarMINI surge da motivação de desmistificar a robótica e
+          provar que soluções de segurança eficazes podem ser construídas por
+          qualquer pessoa, mesmo as pessoas que estão começando agora com
+          Arduino.
+          <br /><br />
+          O nosso objetivo principal é desenvolver um protótipo ideal de sistema
+          de segurança residencial baseado em sensores de movimento.
+          <br /><br />
+          O projeto se contextualiza na área de Educação Maker e Prototipagem de
+          IoT, servindo como um guia prático e inspirador para iniciantes
+          superarem a barreira inicial da programação e aplicação de hardware
+          básico.
+        </p>
+      </section>
 
-      <h2>Esquema Conceitual do AlarMINI:</h2>
-      <img src="./css/img/Tinkercad.png" alt="Esquema Conceitual do AlarMINI" />
+      <section class="info-card">
+        <h2>Esquema Conceitual do AlarMINI:</h2>
+        <img
+          src="./css/img/Tinkercad.png"
+          alt="Esquema Conceitual do AlarMINI"
+        />
+      </section>
 
-      <h2>Passo a passo da montagem</h2>
+      <hr class="card-divider" />
 
-      <h2>Componentes e suprimentos</h2>
+      <section class="info-card">
+        <h2>Passo a passo da montagem</h2>
+      </section>
 
-      <h2>Aplicativos e Plataforma</h2>
-      <ul>
-        <li>DigArduino.ai</li>
-        <li>Tinkercad</li>
-      </ul>
+      <hr class="card-divider" />
 
-      <h2>Código:</h2>
+      <section class="info-card">
+        <h2>Componentes e suprimentos</h2>
+        <table class="componentes-tabela">
+          <thead>
+            <tr>
+              <th>Componente</th>
+              <th>Quantidade</th>
+              <th>Função</th>
+              <th>Código de Referência Comum</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Arduino Uno</strong></td>
+              <td>1x</td>
+              <td>
+                Microcontrolador principal. Processa o sinal do HC-SR04 e
+                controla o Buzzer e o LED.
+              </td>
+              <td>Placa base Arduino Uno</td>
+            </tr>
+            <tr>
+              <td><strong>Sensor Ultrassônico HC-SR04</strong></td>
+              <td>1x</td>
+              <td>
+                Sensor de distância. Emite e recebe pulsos ultrassônicos para
+                detectar a abertura da porta.
+              </td>
+              <td>HC-SR04</td>
+            </tr>
+            <tr>
+              <td><strong>Buzzer Ativo</strong></td>
+              <td>1x</td>
+              <td>
+                Dispositivo de saída sonora. Emite o som de alarme quando a
+                distância excede o limite.
+              </td>
+              <td>Buzzer Ativo</td>
+            </tr>
+            <tr>
+              <td><strong>LED Verde</strong></td>
+              <td>1x</td>
+              <td>
+                Sinalizador visual (pino 13). Acende quando o alarme está ativo.
+              </td>
+              <td>LED Verde 5mm</td>
+            </tr>
+            <tr>
+              <td><strong>Resistor de 300 Ohms</strong></td>
+              <td>1x</td>
+              <td>
+                Componente de segurança para limitar a corrente que passa
+                pelo LED Verde.
+              </td>
+              <td>300 Ohms</td>
+            </tr>
+            <td>Protoboard</td>
+                <td>1x</td>
+                <td>Placa de ensaio para montagem temporária e sem solda do circuito.</td>
+                <td>400 ou 830 pontos</td>
+            </tr>
+            <tr>
+                <td>Cabo USB para Arduino</td>
+                <td>1x</td>
+                <td>Fornece alimentação e permite o upload do código para o Arduino.</td>
+                <td>Cabo USB Tipo A/B</td>
+            </tr>
+            <tr>
+                <td>Jumpers (Fios de Conexão)</td>
+                <td>Variável</td>
+                <td>Fios utilizados para conectar os pinos do Arduino aos componentes na Protoboard.</td>
+                <td>MM / MF / FF</td>
+            </tr>  
+            
+            
+          </tbody>
+        </table>
+      </section>
 
-      <h2>Download do AlarMINI</h2>
+      <hr class="card-divider" />
 
-      <h2>Tutorial em vídeo</h2>
+      <section class="info-card">
+        <h2>Aplicativos e Plataforma</h2>
+        <ul>
+          <li>DigArduino.ai</li>
+          <li>Tinkercad</li>
+        </ul>
+      </section>
 
-      <h2>Problemas ao decorrer do processo</h2>
+      <hr class="card-divider" />
+
+      <section class="info-card">
+        <h2>Código:</h2>
+      </section>
+
+      <hr class="card-divider" />
+
+      <section class="info-card">
+        <h2>Download do AlarMINI</h2>
+        <p>Baixe o arquivo ZIP completo do projeto...</p>
+
+        <div class="download-container">
+          <a href="arquivos/123.zip" id="btnDownload" class="btn-download">
+            Baixar Projeto Completo
+          </a>
+        </div>
+      </section>
+
+      <hr class="card-divider" />
+
+      <section class="info-card">
+        <h2>Tutorial em vídeo</h2>
+      </section>
+
+      <hr class="card-divider" />
+
+      <section class="info-card">
+        <h2>Problemas ao decorrer do processo</h2>
+        <p>
+          <span style="font-size: 1.2em; font-weight: bold"
+            >O que deu errado?</span
+          >
+          <br />
+          O principal desafio foi a interferência da luz ambiente. O sensor LDR
+          é projetado para medir a intensidade de luz. Mesmo com a barreira do
+          laser ativa, a luz externa da sala ou do ambiente era forte o
+          suficiente para ser captada pelo LDR, registrando o estado como
+          "alarme desativado", (mesmo com o laser presente) o tempo todo. Isso
+          impedia que o sistema detectasse a interrupção do feixe (a ativação do
+          alarme) de forma confiável.
+        </p>
+        <p>
+          <span style="font-size: 1.2em; font-weight: bold"
+            >Como foi resolvido?</span
+          >
+          <br />
+          Após tentativas frustradas de isolamento e com o auxílio de
+          professores, a equipe decidiu mudar radicalmente a abordagem de
+          detecção. O sistema foi migrado para um sensor de proximidade
+          ultrassônico (HC-SR04). Este sensor não utiliza luz, mas sim ondas
+          sonoras para medir distâncias. A lógica foi invertida: o sensor
+          identifica um objeto a uma distância segura (ex: parede próxima) e o
+          alarme é acionado apenas quando este objeto se afasta (indicando que o
+          objeto foi movido, ou que houve uma mudança na área monitorada). Essa
+          mudança resolveu o problema de interferência luminosa e funcionou
+          melhor do que o esperado.
+        </p>
+        <p>
+          <span style="font-size: 1.2em; font-weight: bold"
+            >Lições aprendidas:</span
+          >
+          <br />
+          A principal lição que a equipe aprendeu é que a dedicação e
+          persistência são cruciais, especialmente ao enfrentar falhas técnicas.
+          O processo demonstrou a importância crítica da validação de
+          componentes no ambiente real de aplicação, como evidenciado pela
+          interferência luminosa no sensor LDR. Assim, a maior lição foi a
+          necessidade de adaptabilidade: a capacidade de mudar rapidamente para
+          o sensor ultrassônico (HC-SR04), uma solução tecnicamente mais viável,
+          foi essencial para o sucesso do projeto.
+        </p>
+      </section>
     </main>
     <footer>
       <p>&copy; 2025 Equipe AlarMINI. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="./download.js"></script>
   </body>
 </html>
