@@ -29,7 +29,7 @@ O site é um tutorial completo, organizado em 11 tópicos conforme os requisitos
 1.  Nome do Projeto
 2.  Descrição do Projeto (Motivação, Objetivo, Contextualização, Esquema Conceitual)
 3.  Palavras-chave
-4.  Autores
+4.  Autores(Pagina sobre)
 5.  Componentes e Suprimentos
 6.  Aplicativos e Plataforma
 7.  Passo a passo da montagem
