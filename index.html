@@ -48,9 +48,9 @@
           básico.
         </p>
       </section>
-      
-      <hr class="card-divider">
-      
+
+      <hr class="card-divider" />
+
       <section class="info-card">
         <h2>Esquema Conceitual do AlarMINI:</h2>
         <img
@@ -62,45 +62,46 @@
       <hr class="card-divider" />
 
       <section class="info-card">
-            <h2>Palavras-chave</h2>
-            <div class="keyword-tags">
-                <span>#arduino</span>
-                <span>#projeto</span>
-                <span>#sensor</span>
-                <span>#segurança</span>
-                <span>#alarme</span>
-            </div>
-        </section>
+        <h2>Palavras-chave</h2>
+        <div class="keyword-tags">
+          <span>#arduino</span>
+          <span>#projeto</span>
+          <span>#sensor</span>
+          <span>#segurança</span>
+          <span>#alarme</span>
+        </div>
+      </section>
 
-        <hr class="card-divider"/>
-      
+      <hr class="card-divider" />
+
       <section class="info-card">
         <h2>Passo a passo da montagem</h2>
-        <p>
-            Conecte os componentes nas portas digitais do Arduino conforme abaixo:
-            <br><br>
-            1. ENERGIA: Conecte os pinos 5V e GND do Arduino à Protoboard.
-            <br><br>
-            2. SENSOR HC-SR04:
-            - TRIG (Gatilho) -> Porta Digital 9
-            - ECHO (Receptor) -> Porta Digital 10
-            - VCC e GND do sensor devem ser conectados à Protoboard.
-            <br><br>
-            3. BUZZER ATIVO:
-            - Pino Positivo (+) -> Porta Digital 8
-            - Pino Negativo (-) -> GND
-            <br><br>
-            4. LED VERDE:
-            - Pino Positivo (Anodo) -> Porta Digital 13
-            - Pino Negativo (Catodo, COM RESISTOR DE 300 OHMS) -> GND
-            <br><br>
-            IV. CONFIGURAÇÃO DO CÓDIGO (SOFTWARE)
-            <br><br>
-            1. Baixe o arquivo AlarMINI.ino e abra-o na Arduino <br>
-            2. Faça o Upload do código para a placa Arduino Uno.
-            <br><br>
-            AJUSTE DE SENSIBILIDADE: Para alterar a distância de disparo, modifique o valor da variável limiarAbertura no código:
-            int limiarAbertura = 15; // Ajuste este valor em centímetros.
+        <p style="text-align: left">
+          Conecte os componentes nas portas digitais do Arduino conforme abaixo:
+          <br /><br />
+          1. ENERGIA: <br />
+          Conecte os pinos 5V e GND do Arduino à Protoboard. <br /><br />
+          2. SENSOR HC-SR04: <br />
+          - TRIG (Gatilho) -> Porta Digital 9 <br />
+          - ECHO (Receptor) -> Porta Digital 10 <br />
+          - VCC e GND do sensor devem ser conectados à Protoboard.
+          <br /><br />
+          3. BUZZER ATIVO: <br />
+          - Pino Positivo (+) -> Porta Digital 8 <br />
+          - Pino Negativo (-) -> GND
+          <br /><br />
+          4. LED VERDE: <br />
+          - Pino Positivo (Anodo) -> Porta Digital 13 <br />
+          - Pino Negativo (Catodo, COM RESISTOR DE 300 OHMS) -> GND
+          <br /><br />
+          IV. CONFIGURAÇÃO DO CÓDIGO (SOFTWARE)
+          <br /><br />
+          1. Baixe o arquivo AlarMINI.ino e abra-o na Arduino <br />
+          2. Faça o Upload do código para a placa Arduino Uno.
+          <br /><br />
+          AJUSTE DE SENSIBILIDADE: Para alterar a distância de disparo,
+          modifique o valor da variável limiarAbertura no código: int
+          limiarAbertura = 15; // Ajuste este valor em centímetros.
         </p>
       </section>
 
@@ -157,30 +158,37 @@
               <td><strong>Resistor de 300 Ohms</strong></td>
               <td>1x</td>
               <td>
-                Componente de segurança para limitar a corrente que passa
-                pelo LED Verde.
+                Componente de segurança para limitar a corrente que passa pelo
+                LED Verde.
               </td>
               <td>300 Ohms</td>
             </tr>
-            <td>Protoboard</td>
-                <td>1x</td>
-                <td>Placa de ensaio para montagem temporária e sem solda do circuito.</td>
-                <td>400 ou 830 pontos</td>
+            <tr>
+              <td>Protoboard</td>
+              <td>1x</td>
+              <td>
+                Placa de ensaio para montagem temporária e sem solda do
+                circuito.
+              </td>
+              <td>400 ou 830 pontos</td>
             </tr>
             <tr>
-                <td>Cabo USB para Arduino</td>
-                <td>1x</td>
-                <td>Fornece alimentação e permite o upload do código para o Arduino.</td>
-                <td>Cabo USB Tipo A/B</td>
+              <td>Cabo USB para Arduino</td>
+              <td>1x</td>
+              <td>
+                Fornece alimentação e permite o upload do código para o Arduino.
+              </td>
+              <td>Cabo USB Tipo A/B</td>
             </tr>
             <tr>
-                <td>Jumpers (Fios de Conexão)</td>
-                <td>Variável</td>
-                <td>Fios utilizados para conectar os pinos do Arduino aos componentes na Protoboard.</td>
-                <td>MM / MF / FF</td>
-            </tr>  
-            
-            
+              <td>Jumpers (Fios de Conexão)</td>
+              <td>Variável</td>
+              <td>
+                Fios utilizados para conectar os pinos do Arduino aos
+                componentes na Protoboard.
+              </td>
+              <td>MM / MF / FF</td>
+            </tr>
           </tbody>
         </table>
       </section>
@@ -199,12 +207,15 @@
       <hr class="card-divider" />
 
       <section class="info-card">
-    <h2>Códigos:</h2>
-    <hr>
-    <h2>1.Definição de Variáveis e Pinos</h2>
-    <p>O código a seguir é a definição de variáveis e pinos do sistema de alarme:</p>
-        
-    <pre style="background-color: black; text-align: left;">
+        <h2>Códigos:</h2>
+        <hr />
+        <h3>1.Definição de Variáveis e Pinos</h3>
+        <p>
+          O código a seguir é a definição de variáveis e pinos do sistema de
+          alarme:
+        </p>
+
+        <pre style="background-color: black; text-align: left">
         const int trigPin = 9;
         const int echoPin = 10;
         // --- PINOS DO ALARME ---
@@ -217,31 +228,50 @@
         int distanciaNormal = 10;
         int limiarAbertura = 15; // Se ficar MAIOR que este valor, porta abriu
         bool alarmeAtivado = false;
-    </pre>
+    </pre
+        >
 
-    <div style="text-align: left;">
-        <h2>Pinos (9, 10, 13, 8)</h2>
-        <ul>
-            <li>Sensor Ultrassônico (9 e 10):  Define os pinos para emitir (`trigPin`) e receber (`echoPin`) o pulso sonoro para medir a distância.</li>
-            <li>Atuadores (13 e 8): Define as saídas para o LED e o Buzzer (sinais visuais e sonoros).</li>
-        </ul>
+        <div style="text-align: left">
+          <h3>\Pinos (9, 10, 13, 8)/</h3>
+          <ul>
+            <li>
+              Sensor Ultrassônico (9 e 10): Define os pinos para emitir
+              (`trigPin`) e receber (`echoPin`) o pulso sonoro para medir a
+              distância.
+            </li>
+            <li>
+              Atuadores (13 e 8): Define as saídas para o LED e o Buzzer (sinais
+              visuais e sonoros).
+            </li>
+          </ul>
 
-        <h2>Variáveis de Controle</h2>
-        <ul>
-            <li>distancia e duracao: Armazenam os dados da medição do sensor.</li>
-            <li>limiarAbertura = 15;: O valor chave para o alarme. Se a distância medida for **maior que 15 cm**, o alarme é disparado.</li>
-            <li>alarmeAtivado: Uma flag booleana para controlar o estado atual do alarme.</li>
-        </ul>
-    </div>
+          <h3>\Variáveis de Controle/</h3>
+          <ul>
+            <li>
+              distancia e duracao: Armazenam os dados da medição do sensor.
+            </li>
+            <li>
+              limiarAbertura = 15;: O valor chave para o alarme. Se a distância
+              medida for **maior que 15 cm**, o alarme é disparado.
+            </li>
+            <li>
+              alarmeAtivado: Uma flag booleana para controlar o estado atual do
+              alarme.
+            </li>
+          </ul>
+        </div>
 
-<hr>
+        <hr />
 
-    <h2>2.Função de Medição de Distância</h2>
-    
-    <p style="text-align: left;">Responsável por comunicar-se com o sensor HC-SR04 para obter o valor da distância em centímetros.</p>
-    
-    <div style="background-color:black; text-align: left;">
-        <pre>
+        <h3>2.Função de Medição de Distância</h3>
+
+        <p style="text-align: left">
+          Responsável por comunicar-se com o sensor HC-SR04 para obter o valor
+          da distância em centímetros.
+        </p>
+
+        <div style="background-color: black; text-align: left">
+          <pre>
             int medirDistancia() {
                 // Limpa o trigPin, envia o pulso e calcula a distância
                 digitalWrite(trigPin, LOW);
@@ -255,26 +285,28 @@
                 // Cálculo: Tempo * Velocidade do Som (0.034 cm/µs) / 2 (ida e volta)
                 return duracao * 0.034 / 2;
             }
-        </pre>
-    </div>
+        </pre
+          >
+        </div>
 
-    <div style="text-align: left;">
-        <p>A função envia um pulso pelo pino Trig (9), usa o pulseIn() para cronometrar o tempo de retorno do som pelo pino Echo (10) e converte esse tempo em centímetros para determinar a distância até o objeto.</p>
-    </div>
-    <hr>
-    <h2>3.Função Loop (loop)</h2>
-    <p style="text-align: left;">Esta função executa a leitura da distância, verifica o botão de reset e decide se o alarme deve ser ativado ou desativado.</p>
-    <pre style="background-color: black; text-align: left;">
+          <p style="text-align: left">
+            A função envia um pulso pelo pino Trig (9), usa o pulseIn() para
+            cronometrar o tempo de retorno do som pelo pino Echo (10) e converte
+            esse tempo em centímetros para determinar a distância até o objeto.
+          </p>
+        </div>
+        <hr />
+        <h3>3.Função Loop (loop)</h3>
+        <p style="text-align: left">
+          Esta função executa a leitura da distância, verifica o botão de reset
+          e decide se o alarme deve ser ativado ou desativado.
+        </p>
+        <pre style="background-color: black; text-align: left">
         void loop() {
             distancia = medirDistancia();
             Serial.print("Distância: ");
             Serial.print(distancia);
             Serial.println(" cm");
-
-            // Botão de reset
-            if (digitalRead(buttonPin) == LOW) {
-                resetAlarme();
-            }
 
             // Se a distância estiver perto da parede → NÃO apitar
             if (distancia <= limiarAbertura) {
@@ -283,6 +315,7 @@
                 digitalWrite(ledPin, LOW);
                 alarmeAtivado = false;
             }
+            
             // Se a distância estiver longe → APITAR
             else {
                 if (!alarmeAtivado) {
@@ -296,17 +329,25 @@
             delay(150);
         }
 </pre>
-    <div style="text-align: left;">
-        <p>O loop() lê a distância e usa a variável limiarAbertura (15 cm) para a decisão. Se a distância for maior que o limite, ele ativa o Buzzer e o LED. Caso contrário, desliga tudo.</p>
-    </div>
-</section>
-<hr class="card-divider">
+          <p style="text-align: left;">
+            O loop() lê a distância e usa a variável limiarAbertura (15 cm) para
+            a decisão. Se a distância for maior que o limite, ele ativa o Buzzer
+            e o LED. Caso contrário, desliga tudo.
+          </p>
+        </div>
+      </section>
+
+      <hr class="card-divider" />
       <section class="info-card">
         <h2>Download do AlarMINI</h2>
         <p>Baixe o arquivo ZIP completo do projeto...</p>
 
         <div class="download-container">
-          <a href="./arquivos/AlarMINI_Documentação_V1.0.zip" id="btnDownload" class="btn-download">
+          <a
+            href="./arquivos/AlarMINI_Documentação_V1.0.zip"
+            id="btnDownload"
+            class="btn-download"
+          >
             Baixar Projeto Completo
           </a>
         </div>
