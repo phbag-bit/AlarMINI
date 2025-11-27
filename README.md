@@ -42,7 +42,7 @@ O site é um tutorial completo, organizado em 11 tópicos conforme os requisitos
 
 ## 👥 Equipe de Desenvolvimento
 
-* Rafael Torres
-* Lucas Rogério
-* Pedro Henrique Barreiras
-* Gilberto Dias
+* Rafael Torres - rft@cesar.school
+* Lucas Rogério - lrmb@cesar.school                                    
+* Pedro Henrique Barreiras - phbag@cesar.school
+* Gilberto Dias - gdsn@cesar.schoo
